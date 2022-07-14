@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre mi</title>
 </head>
 <body>
-    <nav>
-        <table>
-            <thead>
-                <tr>
-                    <th>Sobre mi</th>
-                    <th>Proyectos</th>
-                    <th>Contacto</th>
-                </tr>
-            </thead>
-        </table>
-    </nav>
     <header>
-        <h1>Zoe Porta</h1>
+        <!-- Se usa con header porque se entiende como título de la página -->
+        <!-- Se podría poner el nav sin main pero lo correcto es así -->
+        <nav>
+            <menu>
+                <li><a href="Sobre mi"></a></li> 
+                <li><a href="proyectos"></a></li>
+                <li><a href="Contacto"></a></li>
+            </menu>
+        </nav>
     </header>
+
     <main>
-        <img height=300 src="imagenes/Programadora.jpeg" alt="Foto de una programadora">
+        <!-- Se podría argumentar si el título va en el header o en la primera section -->
+        <header>
+            <h1>Nombre</h1>
+        </header>
+        <!-- La imagen se podría meter dentro de una section -->
+        <figure>
+            <img src="http://source.unsplash.com/random?face" alt="foto">
+        </figure>
         <section>
             <h2>Programadora</h2>
-            <p>parrafo 1</p>
-            <p>parrafo 2</p>
-            <p>parrafo 3</p>
-            <p>parrafo 4</p>
-            <a href="https://www.linkedin.com/in/zoeporta/">Haz click aquí para ver mi curriculum</a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><a href="Haz click aquí para CV"></a></p>
+
         </section>
     </main>
+
+    <footer>
+        ©Nombre - 2022
+    </footer>
 
 </body>
 </html>
