@@ -8,5 +8,85 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend><h1>Personaliza tu hamburguesa</h1></legend>
+        <h2>Ingredientes</h2>
+          <menu>
+            <li>
+              <input type="checkbox" name="queso" id="queso">
+              <label for="queso">Queso</label>
+            </li>
+            <li>
+             <input type="checkbox" name="pimiento" id="pimiento">
+              <label for="pimiento">Pimiento</label>
+           </li>
+           <li>
+              <input type="checkbox" name="cebolla" id="cebolla">
+              <label for="cebolla">Cebolla</label>
+           </li>
+           <li>
+              <input type="checkbox" name="jamón" id="jamón">
+              <label for="jamón">Jamón</label>
+           </li>
+           <li>
+            <input type="checkbox" name="huevo" id="huevo">
+            <label for="huevo">Huevo</label>
+           </li>
+         </menu>
+          <h2>Tamaño</h2>
+         <menu>
+              <li>
+                <input type="radio" name="tamaño" id="pequeña">
+                <label for="pequeña">Pequeña</label>
+              </li>
+             <li>
+               <input type="radio" name="tamaño" id="mediana">
+               <label for="mediana">Mediana</label>
+              </li>
+            <li>
+              <input type="radio" name="tamaño" id="grande">
+              <label for="grande">Grande</label>
+            </li>
+         </menu>
+
+      </fieldset>
+
+
+      <fieldset>
+        <legend><h1>Datos de entrega</h1></legend>
+          <ul>
+            <li>
+              <label for="nombre">nombre</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Samuel Rodríguez" required>
+            </li>
+            <li>
+              <label for="direccion">Dirección</label>
+              <input type="text" name="direccion" id="direccion" placeholder="Rúa Real, 1, A Coruña" required>
+            </li>
+            <li>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="981 25 57 70" required>
+            </li>
+            <li>
+              <label for="instrucciones">Instrucciones especiales</label>
+              <textarea name="instrucciones" id="instrucciones" cols="30" rows="10" placeholder="Sin tomate"></textarea>
+            </li>
+          </ul>
+
+      </fieldset>
+
+      <fieldset>
+        <legend><h1>Método de pago</h1></legend>
+        <select name="pago" id="pago" required>
+          <option value="hidden">Elige método</option>
+          <option>Tarjeta de crédito</option>
+          <option>Efectivo</option>
+          <option>Bizum</option>
+        </select>
+      </fieldset>
+      <button type="submit" >Enviar</button>
+    </form>
+  </body>
 </html>

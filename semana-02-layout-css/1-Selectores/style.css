@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html{
+    --colorPrincipal: rgb(0, 130, 173);
+    --colorSecundario: rgb(184, 231, 233);
+    --colorTerciario: rgba(109, 158, 221, 0.521);
+    
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: var(--colorPrincipal);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    max-width: 600px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+section h2{
+    color: var(--colorPrincipal);
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+section ul{
+    padding-left: 5rem;
+    list-style: circle;
+}
+
+section li{
+    padding-bottom: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.importante{
+    text-decoration: underline solid black;
+    font-weight: bold;
+}
+
+table{
+    padding-left: 5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+thead{
+    background-color: var(--colorPrincipal);
+    height: 3rem;
+    color: white;
+}
+
+tbody th{
+    background-color: var(--colorTerciario);
+}
+
+
+th{
+    background-color: var(--colorPrincipal);
+    height: 3rem;
+    width: 8rem;
+}
+
+#descanso{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(odd){
+    width: 12rem;
+    background-color: var(--colorSecundario);
+}
+
+tr:nth-child(even){ 
+    width: 12rem; 
+    background-color: var(--colorTerciario); 
+}
+
