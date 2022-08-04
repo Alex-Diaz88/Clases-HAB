@@ -1,0 +1,3 @@
+# Ejercicio sql 1
+Crea una tabla que permita guardar usuarios en la que guardes una id, su DNI, su tlf., su email, su nombre y apellidos. Crea también campos para su dirección: país, CP, varias líneas de dirección...
+
