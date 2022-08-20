@@ -7,8 +7,9 @@ async function main() {
       connection = await getDB();
 
       console.log('Eliminando tablas...');
-      await connection.query('drop table if exists product_photo');
-      await connection.query('drop table if exists product');
+      await connection.query('drop table if exists exp_photo');
+      await connection.query('drop table if exists experiencias');
+      await connection.query('drop table if exists empresa');
       await connection.query('drop table if exists usuario');
       console.log('Tablas eliminadas');
 
@@ -45,6 +46,15 @@ async function main() {
               idEmpresaOrganiza INT unsigned not null,
               foreign key (idEmpresaOrganiza) references empresa (id)
               )
+      `);
+
+      await connection.query(`
+        create table if not exists exp_photo (
+            id int unsigned primary key auto_increment,
+            name varchar(255) not null,
+            idExp int unsigned not null,
+            foreign key (idExp) references experiencias (id)
+            )
       `);
       console.log('Tablas creadas');
 

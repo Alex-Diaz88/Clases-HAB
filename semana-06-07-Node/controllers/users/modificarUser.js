@@ -4,7 +4,7 @@ const modUsuario = async (req, res, next) => {
 
   let connection;
 
-  
+   
   try {
     connection = await getDB();
     

@@ -44,6 +44,12 @@ const loginUsuario = async (req, res, next) => {
       expiresIn: '1d',
     });
 
+    //* Devolver el token
+    res.send({
+      status: "Ok",
+      message: token,
+      })
+
     res.send({
       status: 'Ok',
       authToken: token,
